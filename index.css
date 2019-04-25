@@ -1,0 +1,23 @@
+.tile {
+  width: 20%;
+  height: 10em;
+  display: inline-block;
+}
+
+.color-name {
+  text-align: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  width: 100%;
+}
+
+footer a {
+  margin: 1em;
+  display: block;
+}

@@ -24,7 +24,10 @@ body {
   width: 100%;
 }
 
-footer a {
+.button-panel * {
   margin: 1em;
-  display: block;
+}
+
+.button-panel {
+  margin: 1em;
 }

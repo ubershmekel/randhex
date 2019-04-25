@@ -14,20 +14,21 @@
     <link rel="stylesheet" type="text/css" href="index.css">
   </head>
   <body>
-    <h1><a href="." class="title-link">RandHex - random colors for you to choose from</a></h1>
-    
     <div id="app">
+      <h1><a href="." class="title-link">RandHex - random colors for you to choose from</a></h1>
+      <div class="button-panel">
+        <button v-on:click="sortTiles">sort</button>
+        <button v-on:click="randomizeTiles">randomize</button>
+        <a href="https://github.com/ubershmekel/randhex">source on github</a>
+        <a href="https://github.com/vuejs/vue/">Vue.js</a>
+  
+      </div>
       <div v-for="tile in tiles" class="tile" :style="'background-color:' + tile.hex">
         <div class="color-name">
           {{ tile.hex }}
         </div>
       </div>
     </div>
-
-    <footer>
-      <a href="https://github.com/ubershmekel/randhex">source on github</a>
-      <a href="https://github.com/vuejs/vue/">Vue.js</a>
-    </footer>
 
     <!-- Google Analytics -->
     <script type="text/javascript">
